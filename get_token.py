@@ -2,7 +2,7 @@ import requests
 import json
 import os
 # add your path of your user and pwd binary file
-os.chdir('C:/Users/Li Li/Documents/postman/byoi & excels/json_jwt_authbody/')
+os.chdir('C:/Users/pwd folder')
 
 
 def get_token(url, access):
