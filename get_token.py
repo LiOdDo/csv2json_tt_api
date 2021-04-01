@@ -6,8 +6,7 @@ os.chdir('C:/Users/pwd folder')
 
 
 def get_token(url, access):
-    #url = "https://profservices.staffr.net/rest/v1/auth"
-    #access = 'professionalservice.json'
+
     with open(access) as json_file:
         payload = json.load(json_file)
 
