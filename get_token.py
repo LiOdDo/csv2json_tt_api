@@ -13,7 +13,7 @@ def get_token(url, access):
     headers = {
         'Content-Type': 'application/json',
         # input your PHHSESSID between = and '
-        'Cookie': 'PHPSESSID=1gtjjjlkt2cm1jr4mgp2rsodqeegifg8'
+        'Cookie': 'PHPSESSID=INSERT YOUR PHPSESSID HERE'
     }
 
     response = requests.request("POST", url, headers=headers, json=payload)
