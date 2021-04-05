@@ -33,7 +33,7 @@ def build_import(lookup_list, template_file, endpoint):
     source_to_import = {"onFailure": "ABORT",
                         "operations": []}
     # total_source = len(data_source['customId'])
-    total_source = len(data_source.columns[0])
+    total_source = len(data_source[data_source.columns[0]])
 
     for i in range(total_source):
         data_temp = build_dict(data_source, i)
