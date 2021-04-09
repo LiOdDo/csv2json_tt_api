@@ -1,5 +1,5 @@
 # csv2json_tt_api
-json file convertor and api auth_N_import script
+json file convertor and api auth_and_import py script
 
 build_import.py has the function to create json import file from on datasource which is csv format
 the example..py is an example demo how to use it
