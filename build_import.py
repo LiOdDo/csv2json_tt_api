@@ -10,8 +10,12 @@ def build_dict(data_source, row):
         if '.' in i:
             key_parent = i[0:i.find('.')]
             key_child = i[i.find('.')+1:len(i)]
-            dict_temp.update(
-                {f'{key_parent}': {f'{key_child}': f"{data_source[f'{i}'][row]}"}})
+            if key_parent in dict_temp.keys():
+                dict_temp[f'{key_parent}'].update(
+                    {f'{key_child}': f"{data_source[f'{i}'][row]}"})
+            else:
+                dict_temp.update(
+                    {f'{key_parent}': {f'{key_child}': f"{data_source[f'{i}'][row]}"}})
         else:
             dict_temp.update({f"{i}": f"{data_source[f'{i}'][row]}"})
 
